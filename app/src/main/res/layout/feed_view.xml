@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "18dp">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id = "@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:src = "@drawable/sample_image">
+            </ImageView>
+            <TextView
+                android:id="@+id/newsHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Headline"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="18sp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/newsAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="author Name"
+                    android:textStyle="bold"
+                    android:layout_weight="3"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newsDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Publish"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="start">
+
+                </TextView>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnContent"
+                android:layout_width="164dp"
+                android:layout_height="48dp"
+                android:text="Read More">
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
